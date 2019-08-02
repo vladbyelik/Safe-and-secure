@@ -1,0 +1,203 @@
+.blue_stroke {
+  position: absolute;
+  top: 0;
+}
+
+.section-headline {
+  font-size: 21px;
+  letter-spacing: 6px;
+  line-height: 31px;
+  color: #6e6e6e;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  strong {
+    color: #d75014;
+    font-weight: 600;
+  }
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
+}
+
+.shield-block {
+  display: flex;
+  padding: 4rem 0;
+}
+
+.shield-icon {
+  background-image: url("../../src/img/shield_icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 29px;
+}
+
+.shield-text {
+  max-width: 48rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.shield-text span {
+  font-size: 1rem;
+  line-height: 29px;
+  color: #6e6e6e;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.div {
+  margin: 0 4rem;
+}
+
+.search-block {
+  display: flex;
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
+}
+
+.icon-search {
+  color: #569078;
+  font-size: 3rem;
+}
+
+.search-text {
+  max-width: 21rem;
+  width: 100%;
+  padding-left: 2rem;
+  span {
+    max-width: 379px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9abcae;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.orange-line {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  background-color: #d65013;
+  left: 50%;
+  top: -30px;
+}
+
+.security {
+  background-color: #e2ebf4;
+  .container-small {
+    display: flex;
+    position: relative;
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      .security-block, .security-photo {
+        margin: 2rem auto;
+      }
+    }
+  }
+}
+
+.security-photo {
+  background-image: url("../../src/img/FPO_Desk image.png");
+  width: 446px;
+  height: 446px;
+  border-radius: 50%;
+}
+
+.security-photo, .security-block {
+  z-index: 1;
+}
+
+.lock-icon {
+  width: 20px;
+  height: 30px;
+  background-image: url("../../src/img/lock_icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0;
+}
+
+.security-block {
+  width: 100%;
+  max-width: 24rem;
+  padding-left: 3rem;
+}
+
+.security-text {
+  font-size: 15px;
+  line-height: 29px;
+  color: #858788;
+  font-family: "Raleway", sans-serif;
+}
+
+.white-square {
+  position: absolute;
+  width: 355px;
+  height: 404px;
+  background-image: url("../../src/img/white_stroke_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.white-line {
+  max-width: 37rem;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 47rem;
+  top: 18rem;
+}
+
+.continues .container {
+  position: relative;
+}
+
+.continues-list li {
+  display: flex;
+  padding: 4rem 0 0;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    .div, .list-text {
+      margin: 1rem auto;
+    }
+  }
+}
+
+.container-small {
+  padding: 9rem 0;
+}
+
+.icon {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+}
+
+.medical {
+  background-image: url("../../src/img/plus.png");
+}
+
+.num {
+  background-image: url("../../src/img/139_icon.png");
+}
+
+.lock {
+  background-image: url("../../src/img/lock_icon_2.svg");
+}
+
+.wave {
+  background-image: url("../../src/img/quake_icon.png");
+}
+
+.list-text {
+  font-size: 21px;
+  line-height: 31px;
+  color: #6e6e6e;
+  font-family: "Raleway", sans-serif;
+}
