@@ -24,8 +24,10 @@ li {
 }
 
 .priority {
-  position: relative;
   z-index: 0;
+  .container {
+    position: relative;
+  }
 }
 
 /////////////////////////

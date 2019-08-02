@@ -149,8 +149,12 @@
   height: 1px;
   background-color: #ffffff;
   position: absolute;
-  left: 47rem;
+  left: 30%;
   top: 18rem;
+  z-index: 2;
+  @media (max-width: 1000px) {
+    max-width: 20rem;
+  }
 }
 
 .continues .container {
