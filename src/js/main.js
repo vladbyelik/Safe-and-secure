@@ -1,15 +1,15 @@
 let elem = document.getElementById('img-absolute');
-let pos = 38;
-let sop = -17;
+let left = 38;
+let top = -17;
 let id = setInterval(frame, 50);
 function frame () {
-  if (pos === 51 || sop === -40) {
+  if (left === 51 || top === -40) {
     clearInterval(id);
   } else {
-    pos++;
-    sop = sop - 1.75;
-    elem.style.left = pos + "px";
-    elem.style.top = sop + "px";
+    left++;
+    top = top - 1.75;
+    elem.style.left = left + "px";
+    elem.style.top = top + "px";
   }
 }
 
