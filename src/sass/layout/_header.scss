@@ -46,6 +46,7 @@ h1, h2 {
 
 .fadeInLeftBig, .fadeInRightBig {
   padding: 0 1rem;
+  position: relative;
 }
 
 .logos {
@@ -56,7 +57,7 @@ h1, h2 {
     img {
       height: 98px;
     }
-    img:nth-child(2) {
+    #img-absolute {
       position: absolute;
       width: 16px;
       left: 38px;
@@ -140,91 +141,13 @@ h3 {
   color: #d75014;
 }
 
-
-
-///////////////////////
-
-
-.scale-in-hor-center {
-  -webkit-animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-  animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-}
-
-@-webkit-keyframes scale-in-hor-center {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
-@keyframes scale-in-hor-center {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
-
-////////////////////////
-
-.slit-in-diagonal-1 {
-  -webkit-animation: slit-in-diagonal-1 0.8s ease-out both;
-  animation: slit-in-diagonal-1 0.8s ease-out both;
-}
-
-@-webkit-keyframes slit-in-diagonal-1 {
-  0% {
-    -webkit-transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
-    transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  54% {
-    -webkit-transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
-    transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(0) rotate3d(1, 1, 0, 0);
-    transform: translateZ(0) rotate3d(1, 1, 0, 0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-
-@keyframes slit-in-diagonal-1 {
-
-  0% {
-    -webkit-transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
-    transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  54% {
-    -webkit-transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
-    transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(0) rotate3d(1, 1, 0, 0);
-    transform: translateZ(0) rotate3d(1, 1, 0, 0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+.officer {
+  position: relative;
+  #tail {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    transform-origin: 0 90% 0;
+    transform: rotateZ(0deg);
   }
 }
