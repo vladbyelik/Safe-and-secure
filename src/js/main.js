@@ -1,15 +1,15 @@
 let elem = document.getElementById('img-absolute');
-let left = 38;
-let top = -17;
+let leftMove = 38;
+let upMove = -17;
 let id = setInterval(frame, 50);
 function frame () {
-  if (left === 51 || top === -40) {
+  if (leftMove === 51 || upMove === -40) {
     clearInterval(id);
   } else {
-    left++;
-    top = top - 1.75;
-    elem.style.left = left + "px";
-    elem.style.top = top + "px";
+    leftMove++;
+    upMove = upMove - 1.75;
+    elem.style.left = leftMove + "px";
+    elem.style.top = upMove + "px";
   }
 }
 
