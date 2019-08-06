@@ -1,9 +1,9 @@
 let elem = document.getElementById('img-absolute');
 let leftMove = 38;
-let upMove = -17;
-let id = setInterval(frame, 50);
-function frame () {
-  if (leftMove === 51 || upMove === -40) {
+let upMove = 21;
+let id = setInterval(fly, 50);
+function fly () {
+  if (leftMove === 51 || upMove === -1.75) {
     clearInterval(id);
   } else {
     leftMove++;
